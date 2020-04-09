@@ -1,0 +1,152 @@
+// Header
+.main-header {
+    width: 95%;
+    margin: 0 0 0 auto;
+}
+
+
+nav {
+    @include flex(space-between, center, row);
+    min-height: 10vh;
+    flex-wrap: wrap;
+
+    .logo {
+        @include flex(flex-start, center, row);
+        flex: 1 1 10rem;
+
+        h1 {
+            margin: 2rem;
+            font-family: 'Odachi';
+            font-size: 3rem;
+            color: $pink;
+        }
+    }
+
+    ul {
+        @include flex(space-around, center, row);
+        flex: 1 1 40rem;
+
+        a {
+            color: $white;
+            font-size: 3rem;
+            font-family: 'Odachi';
+        }
+    }
+}
+
+.home {
+    color: $pink;
+}
+
+// Intro
+.intro {
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    @include flex(space-between, center, row);
+
+    h2 {
+        font-family: 'Anurati';
+        font-size: 8rem;
+        padding: 2rem 0 0 0;
+        background: $dusk;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+
+    h3 {
+        font-size: 6rem;
+        padding: 2rem 0;
+        color: $violet;
+    }
+
+    p {
+        padding: 2rem 0 0 0;
+        color: $grey;
+    }
+}
+
+.intro-social {
+    margin: 4rem 0 0 0;
+
+    a {
+        margin: 0 5rem 0 0;
+
+    }
+
+}
+
+.active {
+    background: $pink;
+    color: $white;
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+}
+
+.intro-text,
+.intro-images {
+    flex: 1 1 40rem;
+}
+
+
+.splash {
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+}
+
+#plant-left {
+    animation: leaf 1.5s ease infinite alternate;
+}
+
+#plant-right {
+    animation: leaf 1.5s ease infinite alternate 0.5s;
+}
+
+#me {
+    animation: meMove 1s ease infinite alternate;
+    transform-origin: bottom;
+}
+
+#clock-arrow {
+    animation: clock 360s linear infinite;
+    transform-box: fill-box;
+    transform-origin: bottom;
+
+}
+
+@keyframes meMove {
+    from {
+        transform: rotateZ(-5deg);
+    }
+
+    to {
+        transform: rotateZ(5deg);
+
+    }
+}
+
+@keyframes clock {
+    from {
+        transform: rotateZ(0deg);
+
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes leaf {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-30%);
+    }
+}

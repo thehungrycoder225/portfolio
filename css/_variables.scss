@@ -1,0 +1,84 @@
+//Colors
+$primary:#003f5c;
+$blue:#2f4b7c;
+$violet: #665191;
+$pink:#a05195;
+$pink-1:#d45087;
+$coral:#f95d6a;
+$orange: #ff7c43;
+$yellow:#ffa600;
+
+$black:#000000;
+$grey:#575757;
+$white:#fafafa;
+
+$summer: linear-gradient(#941c4c, #f69a7b);
+$dusk: linear-gradient(to top, #ffecb3, #e85285, #6A1B9A);
+//Text Colors
+$text-primary:$primary;
+$text-blue:$blue;
+$text-violet:$violet;
+$text-pink:$pink;
+$text-pink-1:$pink-1;
+$text-coral:$coral;
+$text-orange:$orange;
+$text-yellow:$yellow;
+$text-dark:$black;
+$text-muted:$grey;
+$text-white:$white;
+
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: !default;
+$body-color: !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * .875 !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;

@@ -1,0 +1,102 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "variables";
+@import "global";
+@import "intro";
+@import "projects";
+@import "contact";
+@import "footer";
+
+@media screen and (max-width:1330px) {
+    html {
+        font-size: 53%;
+    }
+
+    .splash {
+        display: none;
+    }
+
+    svg {
+        width: 80%;
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+
+
+            a {
+                color: $primary;
+                font-size: 3rem;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:754px) {
+    html {
+        font-size: 45%;
+    }
+
+    svg {
+        height: 60%;
+    }
+
+    .main-header {
+        width: 100%;
+
+    }
+
+    nav {
+
+        .logo {
+            @include flex(center, center, column);
+            margin: 3rem 0 0 0;
+            flex: 1 1 40rem;
+        }
+
+        ul {
+            flex: 1 1 70rem;
+
+            a {
+                color: $primary;
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .intro-text {
+        text-align: center;
+        margin: 5rem 0 0 0;
+    }
+
+    .intro-social {
+        @include flex(center, center, row)
+    }
+
+    .intro-images {
+        @include flex(center, center, row)
+    }
+
+    .travelly,
+    .vgophoto {
+        flex: 1 1 50rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    form {
+        width: 100%;
+    }
+}
