@@ -171,7 +171,7 @@ nav ul a {
   padding: 2rem 0 0 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffecb3), color-stop(#e85285), to(#6A1B9A));
   background: linear-gradient(#ffecb3, #e85285, #6A1B9A);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   letter-spacing: 0.5rem;
@@ -185,7 +185,7 @@ h3 {
 }
 
 p {
-  font-family: 'Blanka';
+  font-family: 'GoogleSans';
   font-size: 1.5rem;
   font-weight: 400;
   width: 90%;
@@ -402,8 +402,8 @@ p {
   font-size: 1.5rem;
   font-family: 'GoogleSans';
   background: #a05195;
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .form-section form input,
@@ -436,8 +436,8 @@ p {
   padding: 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffecb3), color-stop(#e85285), to(#6A1B9A));
   background: linear-gradient(#ffecb3, #e85285, #6A1B9A);
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
           box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
 }
