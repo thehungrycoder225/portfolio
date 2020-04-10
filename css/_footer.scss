@@ -1,10 +1,10 @@
 footer {
     min-height: 10vh;
     padding: 0% 5%;
-    color: $primary;
-    background-color: $violet;
-
+    color: $white;
+    background: $primary;
     @include flex(flex-start, center, row);
+
 
     ul {
         flex: 1 1 40rem;
@@ -12,7 +12,15 @@ footer {
     }
 
     h4 {
-
+        font-family: 'Odachi', sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 2rem;
         flex: 1 1 40rem;
     }
+
+    img {
+        width: 25px;
+    }
+
 }

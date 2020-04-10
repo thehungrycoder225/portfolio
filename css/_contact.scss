@@ -6,35 +6,58 @@
     form {
         @include flex (center, center, column);
         padding: 3rem 10rem;
-        box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2),
-            0px 20px 40px rgba($color: #000000, $alpha: 0.2);
+        box-shadow: 10px 10px 30px rgba($color: #d9d9d9, $alpha: 0.5),
+            -10px -10px 30px rgba($color: $white, $alpha: 0.5);
         border-radius: 2rem;
+
+        label {
+            font-size: 1.5rem;
+            font-family: 'GoogleSans';
+            background: $pink;
+            background-clip: text;
+            color: transparent;
+        }
 
         input,
         textarea {
+            color: $grey;
+            font-family: 'GoogleSans', sans-serif;
             margin: 2rem;
             border-radius: 1rem;
+            padding: 2rem 1rem;
+            width: 100%;
+            border: none;
+            box-shadow: inset 5px 5px 10px #d9d9d9,
+                inset -5px -5px 10px #ffffff;
+            ;
 
             &:focus {
-                outline: 2px solid black;
+                background: $white;
+                box-shadow: inset 5px 5px 10px #d9d9d9,
+                    inset -5px -5px 10px #ffffff;
             }
         }
 
-        textarea {
-            font-family: 'Noir', sans-serif;
-        }
-
         button {
-
+            font-size: 1.5rem;
+            font-family: 'GoogleSans', sans-serif;
+            outline: none;
             border-radius: 1.5rem;
             border: none;
             width: 100%;
             padding: 2rem;
-            background: $summer;
-            color: $white;
+            background: $dusk;
+            background-clip: text;
+            color: transparent;
+            box-shadow: 5px 5px 10px #d9d9d9,
+                -5px -5px 10px #ffffff;
 
-            &:focus {
-                background: $dusk;
+            &:focus,
+            &:active {
+                background: $white;
+                color: $grey;
+                box-shadow: inset 5px 5px 10px #d9d9d9,
+                    inset -5px -5px 10px #ffffff;
             }
         }
     }

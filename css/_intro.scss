@@ -28,7 +28,7 @@ nav {
 
         a {
             color: $white;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-family: 'Odachi';
         }
     }
@@ -47,25 +47,36 @@ nav {
     @include flex(space-between, center, row);
 
     h2 {
-        font-family: 'Anurati';
+        font-family: 'Odachi';
         font-size: 8rem;
         padding: 2rem 0 0 0;
         background: $dusk;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline-block;
+        letter-spacing: 0.5rem;
     }
+}
 
-    h3 {
-        font-size: 6rem;
-        padding: 2rem 0;
-        color: $violet;
-    }
 
-    p {
-        padding: 2rem 0 0 0;
-        color: $grey;
-    }
+
+h3 {
+    font-family: 'GoogleSans';
+    font-size: 4rem;
+    padding: 2rem 0;
+    color: $primary;
+
+
+}
+
+p {
+    font-family: 'Blanka';
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 90%;
+    letter-spacing: 0.2rem;
+    padding: 2rem 0 0 0;
+    color: $grey;
 }
 
 .intro-social {
@@ -79,10 +90,13 @@ nav {
 }
 
 .active {
-    background: $pink;
+    background: linear-gradient(145deg, $pink-1, $pink);
+    ;
     color: $white;
     padding: 1rem 3rem;
-    border-radius: 1.5rem;
+    border-radius: 2.5rem;
+    box-shadow: 5px 5px 10px #d9d9d9,
+        -5px -5px 10px #ffffff;
 }
 
 .intro-text,
@@ -97,6 +111,7 @@ nav {
     top: 0%;
     right: 0%;
     z-index: -1;
+    overflow: hidden;
 }
 
 #plant-left {

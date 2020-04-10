@@ -8,11 +8,20 @@
 
     h2 {
         margin: 5rem;
+        font-family: 'Odachi';
+        font-size: 3rem;
+        color: $blue;
+    }
+
+    img {
+        border-radius: 1rem;
+        box-shadow: 0px 5px 5px rgba(87, 87, 87, 0.5);
     }
 }
 
 .travelly,
 .vgophoto {
     flex: 1 1 40rem;
+
 
 }
