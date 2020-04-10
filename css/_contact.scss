@@ -14,8 +14,8 @@
             font-size: 1.5rem;
             font-family: 'GoogleSans';
             background: $pink;
-            background-clip: text;
-            color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         input,
@@ -47,8 +47,8 @@
             width: 100%;
             padding: 2rem;
             background: $dusk;
-            background-clip: text;
-            color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             box-shadow: 5px 5px 10px #d9d9d9,
                 -5px -5px 10px #ffffff;
 

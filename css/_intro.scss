@@ -51,10 +51,11 @@ nav {
         font-size: 8rem;
         padding: 2rem 0 0 0;
         background: $dusk;
-        background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline-block;
         letter-spacing: 0.5rem;
+
     }
 }
 
